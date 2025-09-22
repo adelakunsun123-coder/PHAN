@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Tech Academy - Youth Tech Empowerment</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #FFD700;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1E3A8A;
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #FFD700;
+            color: #1E3A8A;
+            transform: translateY(-2px);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="http://static.photos/technology/200x200/1" alt="Phantom Tech Academy Logo" class="h-10 mr-2">
+                <span class="text-xl font-bold text-blue-900">Phantom Tech Academy</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-blue-900 font-medium">About</a>
+                <a href="#programs" class="nav-link text-blue-900 font-medium">Programs</a>
+                <a href="#why-us" class="nav-link text-blue-900 font-medium">Why Choose Us</a>
+                <a href="#partnership" class="nav-link text-blue-900 font-medium">Partnership</a>
+                <a href="#contact" class="nav-link text-blue-900 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i data-feather="menu" class="text-blue-900"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">
+                Transforming <span class="text-yellow-400">Nigeria</span> Through Youth Tech Empowerment
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Equipping children and teenagers with practical IT skills for academic excellence, career opportunities, and leadership in a digital world.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="#partnership" class="btn-primary bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full inline-block">
+                    Partner With Us
+                </a>
+                <a href="#contact" class="btn-secondary border-2 border-yellow-400 text-yellow-400 font-bold py-3 px-8 rounded-full inline-block">
+                    Enroll Your Child
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About Us</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-700">"To transform Nigeria through youth tech empowerment."</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-700">"To equip children and teenagers with practical digital skills that prepare them for academic excellence, career opportunities, and leadership in a technology-driven world."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Programs</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="program-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up">
+                    <div class="bg-blue-900 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Primary School Program</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Computer Basics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Scratch Coding</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Internet Safety</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-900 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Secondary School Program</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Microsoft Office</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Graphics Design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Web Design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Python Programming</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-yellow-400 mr-2 mt-1"></i>
+                                <span>Cybersecurity</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Why Choose Us</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up">
+                    <div class="text-blue-900 mb-4">
+                        <i data-feather="activity" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Practical Learning</h3>
+                    <p class="text-gray-700">Our hands-on approach ensures students gain real-world skills they can apply immediately.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-900 mb-4">
+                        <i data-feather="dollar-sign" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Affordable & Scalable</h3>
+                    <p class="text-gray-700">We offer quality tech education at accessible prices with flexible learning options.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-900 mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Experienced Instructors</h3>
+                    <p class="text-gray-700">Our team consists of industry professionals passionate about mentoring the next generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">School Partnership Program</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    We collaborate with schools to deliver world-class IT training programs that enhance their ICT profile and give students an edge in technology.
+                </p>
+                <a href="#contact" class="btn-primary bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full inline-block">
+                    Book a Meeting
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-yellow-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p>phantomtechacademy@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-yellow-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p>+234 XXX XXX XXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-yellow-400 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p>Calabar, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-white hover:text-yellow-400 transition-colors">
+                                <i data-feather="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-400 transition-colors">
+                                <i data-feather="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-400 transition-colors">
+                                <i data-feather="instagram" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-400 transition-colors">
+                                <i data-feather="linkedin" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 rounded bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        </div>
+                        <button type="submit" class="btn-secondary bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full inline-block">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="http://static.photos/technology/200x200/1" alt="Phantom Tech Academy Logo" class="h-8 mr-2">
+                        <span class="text-lg font-bold">Phantom Tech Academy</span>
+                    </div>
+                </div>
+                <div class="text-sm">
+                    &copy; 2023 Phantom Tech Academy. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
