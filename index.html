@@ -13,7 +13,7 @@
     <!-- boostrap -->
 
 <!-- Add Bootstrap CSS & JS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 
     <!-- end -->
@@ -96,48 +96,34 @@
 <!-- git add .
 git commit -m "Your update message"
 git push origin main -->
-
-
-
-   <!-- Bootstrap Navbar -->
-<nav class="navbar navbar-expand-lg navbar-white   fixed-top" style="  background-color: white;">
-  <div class="container-fluid">
-        <img   style="transform: rotate(90deg); height: 60px;width: 60px;" src="assets/img/MM.png" alt="">
-  
-    <a class="navbar-brand" href="#">Phantom Tech Academy</a>
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
-        </li>
-      </ul>
-      <div class="d-flex">
-        <a href="#" class="btn bg-primary text-white me-2">Login</a>
-        <a href="#" class="btn btn-outline-primary  btn-light ">Sign Up</a>
-      </div>
+<!-- Responsive Tailwind Navbar -->
+<header class="fixed top-0 w-full bg-white shadow-md z-50">
+  <nav class="container mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo + Brand -->
+    <div class="flex items-center space-x-3">
+      <img src="assets/img/MM.png" alt="Phantom Tech Academy Logo" class="h-14 w-14 transform rotate-90">
+      <span class="text-xl font-bold text-blue-900">Phantom Tech Academy</span>
     </div>
-  </div>
-  </nav>
-  
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8">
+      <li><a href="#home" class="text-blue-900 hover:text-blue-600 font-medium">Home</a></li>
+      <li><a href="#about" class="text-blue-900 hover:text-blue-600 font-medium">About</a></li>
+      <li><a href="#services" class="text-blue-900 hover:text-blue-600 font-medium">Services</a></li>
+      <li><a href="#contact" class="text-blue-900 hover:text-blue-600 font-medium">Contacts</a></li>
+      <li><a href="#courses" class="text-blue-900 hover:text-blue-600 font-medium">Courses</a></li>
+    </ul>
+
+    <!-- Desktop Buttons -->
+    <div class="hidden md:flex space-x-3">
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Login</a>
+      <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Sign Up</a>
+    </div>
+
+    <!-- Mobile Menu But--->
+
+
+
 
 
     <!-- Hero Section -->
@@ -393,8 +379,5 @@ git push origin main -->
     </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
